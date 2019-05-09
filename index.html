@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Code-Typing a Blog Post</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <h1>Making an approximations for nth index using Prime number Theorem</h1>
+<p><strong><em>May 9th, 2019</em> by Aziz Lokhandwala</strong></p>
+<h2>Abstract: Using of Gauss’s Prime number theorem for finding number of primes can also tell us which primes are located for a desired index. But it will give a rough approximation because prime number theorem by Gauss is a rough approximation for number of primes.</h2>
+
+<p>Let us first assume two lines passing through origin with slope m1 and m2 and let’s assume
+that these lines makes angle 𝜃 and 𝛿 with positive direction of X- axis. Now let’s make just
+one more assumption that these two lines intersect curve at \(𝑦 = x/lnx \)  \((x1, y1)\) and \((x2, y2)\).
+Thus from above assumptions we have following equations,
+$$y = m1 * x$$
+$$y = m2 * x$$</p>
+<p>Now above lines are intersecting curve at (x1, y1) and (x2, y2), thus by this we can conclude that these two points are on both lines. Therefore,
+$$y1 = m1 * x1$$
+$$y2 = m2 * x2$$
+also points are on curve too, therefore we can also conclude that,
+$$y1 = x1/ lnx1$$
+$$y2 = x2/ lnx2$$
+Now our one more assumption was that, these lines are making angle 𝜃 and 𝛿. Thus,
+$$m1 = tan𝜃$$
+$$m2 = tan𝛿$$</p>
+<h3>Derivation</h3>
+ <p><em>Basic Concepts of coordinate geometry</em>.</p>
+
+<p>let cot 𝜃 = a and cot 𝛿 = b
+$$ x1 = e ^ a$$
+$$ x2 = e ^ b$$
+$$ y1 = {e ^ a \over a}$$
+$$ y2 = {e ^ b \over b}$$
+$${y1 \over x1}={1 \over a}$$
+$${y2 \over x2}={1 \over b}$$
+Now we are finding the line more specifically a secant joining (x1,y1) and (x2, y2).
+So slope of that secant is given as,
+$$m = {(y2 - y1)\over (x1 - x2)}$$ 
+Considering x1 > x2
+Therefore, we can  find slope of secant 'm'.</p>
+<p>Now let's find equation of that line using,
+$$ m = {(y - y1)\over (x - x1)}$$
+Now considering equation of line as a function and let's integrate that function.
+Now considering only the first part of the result we get,
+$${((e^b)/b - (e^a)/a) \over (e^a - e^b) } * {x^2 \over 2}$$</p>
+<p>It provides an approximate prime number.
+Now here note that although 0, 1 are not considered to be primes but for counting they are counted as primes and so counting starts as follows,
+0, 1, 2, 3, 5, 7, 11, ...
+Now suppose you want the eleventh prime just replace x by 11 in above equation and take valueof 𝜃= 60∘ 𝑎𝑛𝑑 𝛿= 45∘.</p>
+<h3>Uses</h3>
+    
+    <p> You can determine which prime is at which index just by one equation Many further improvements can be done in methods like RSA Encryption, ...  Also further development at atomic scale can be done by this theory. </p>
+<h3>References</h3>
+    <p>Prime number theorem(https://faculty.math.illinois.edu/~r-ash/CV/CV7.pdf)</p> 
+    <p>Newman’s short proof(https://people.mpim- bonn.mpg.de/zagier/files/doi/10.2307/2975232/fulltext.pdf)</p>
+    
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+  
+
+   
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+
+</body>
+
+</html>
